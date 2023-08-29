@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md pt-5 pb-4 bg-light">
+      <div class="container-xxl">
+        <!-- navbar brand / title -->
+        <a class="navbar-brand" href="#intro">
+          <i class="bi bi-book-half"></i>
+          <span class="text-secondary fw-bold"> Everest Tech - the Book </span>
+        </a>
+
+        <!-- toggle button for mobile nav -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- navbar links -->
+        <div
+          class="collapse navbar-collapse justify-content-end align-center"
+          id="main-nav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#topics">About The Book</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reviews">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Get in Touch</a>
+            </li>
+            <li class="nav-item d-md-none">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item ms-2 d-none d-md-inline">
+              <a class="btn btn-secondary" href="#pricing">buy now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main image & intro text -->
+    <section id="intro">
+      <div class="container-lg mt-4 pt-1">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-5 text-center text-md-start">
+            <h1>
+              <div class="display-2 text-info">Programming at its best</div>
+              <div class="display-5 text-muted">Your coding skills</div>
+            </h1>
+            <p class="lead my-4 text-muted">
+              Front end development is a style of computer programming that focuses on the coding and creation of elements and features of a website that will then be seen by the user. It's about making sure the visual aspects of a website are functional.
+            </p>
+            <a href="#pricing" class="btn btn-secondary btn-lg">Buy now</a>
+          </div>
+          <div class="col-md-5 text-center d-none d-md-block">
+            <img
+              class="co-md-5 text-center rounded"
+              img
+              src="https://m.media-amazon.com/images/I/51b1se0kqAL.jpg"
+              alt="e-book cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing plans -->
+
+    <section id="pricing" class="bg-light mt-5">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>Pricing plans</h2>
+          <p>Choose a pricing plan to suit</p>
+        </div>
+        <div class="row align-center justify-content-center my-5 g-0">
+          <div class="col-lg-4 col-xl-3 col-8">
+            <div class="card border-0">
+              <div class="card-body text-center py-4">
+                <h4 class="card-title">Starter Edition</h4>
+                <p class="lead card-subtitle">E-book download only</p>
+                <p class="display-5 text-primary fw-bold my-4">Ksh12000</p>
+                <p>
+                  Learn the basics of HTML, CSS, and JavaScript with our Starter Edition. This comprehensive guide covers the fundamentals of web development, including building and styling web pages, adding interactive elements, and creating dynamic websites. Perfect for beginners!
+                </p>
+                <a class="btn btn-outline-primary btn-lg mt-3">Buy now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-9">
+            <div class="card border-2 border-primary">
+              <div class="card header-primary text-center">Most Popular</div>
+              <div class="card-body text-center">
+                <h4 class="card-title">Complete Edition</h4>
+                <p class="lead card-subtitle">
+                  E-Book download and all updates
+                </p>
+                <p class="card-text display-5 text-primary fw-bold my-4">
+                  Ksh18000
+                </p>
+                <p class="card-text mx-5 text-muted d-none d-lg-block">
+                  Master HTML, CSS, and JavaScript with our Complete Edition. This comprehensive guide goes beyond the basics, exploring advanced concepts, responsive design, and dynamic web applications. Perfect for aspiring web developers, this is your key to becoming a coding expert.
+                </p>
+                <a class="btn btn-outline-primary btn-lg mt-3">Buy now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-8">
+            <div class="card border-0">
+              <div class="card-body text-center py-4">
+                <h4 class="card-title">Ultimate Edition</h4>
+                <p class="lead card-subtitle">Download, updates</p>
+                <p class="card-text display-5 text-primary fw-bold my-4">
+                  ksh15000
+                </p>
+                <p class="card-text text-muted d-none d-lg-block mx-5">
+                  Unleash your full potential with our Ultimate Edition on HTML, CSS, and JavaScript. Dive into advanced techniques, cutting-edge frameworks, and industry best practices. Elevate your coding skills and become a web development champion with this ultimate resource.
+                </p>
+                <a class="btn btn-outline-primary btn-lg mt-3">Buy now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accordion -->
+    <!-- accordion section -->
+    <section id="topics" class="">
+      <!-- fixed column at the middle to achieve this breakpoint -->
+      <div class="container-md">
+        <div class="text-center ">
+          <h2>Inside the book</h2>
+          <p class="lead text-muted">A quick glance at the topics you'll learn</p>
+        </div>
+
+        <div class="row my-5 g-5 justify-content-around align-items-center">
+          <div class="col-6 col-lg-4">
+            <img src="https://m.media-amazon.com/images/I/41SoHOw+hjL._SL500_.jpg" class="img-fluid" alt="e-book">
+          </div>
+
+          <div class="col-lg-6">
+          <div class="accordion" id="chapters">
+
+
+          <!-- accordion -->
+
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-1" aria-expanded="true" aria-controls="chapter-1">
+                  Chapter 1 - Introduction to HTML
+                </button>
+              </h2>
+              <div id="chapter-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#chapters">
+                <div class="accordion-body">
+                  <p>HTML stands for HyperText Markup Language. It is a standard markup language for web page creation. It allows the creation and structure of sections, paragraphs, and links using HTML elements (the building blocks of a web page) such as tags and attributes.</p>
+                  <p>It's also worth noting that HTML is not considered a programming language as it can't create dynamic functionality, although it is now considered an official web standard. The World Wide Web Consortium (W3C) maintains and develops HTML specifications, along with providing regular updates.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-2" aria-expanded="false" aria-controls="chapter-2">
+                  Chapter 2 - Mastering CSS
+                </button>
+              </h2>
+              <div id="chapter-2" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#chapters">
+                <div class="accordion-body">
+                  <p>Cascading Style Sheets, fondly referred to as CSS, is a simply designed language intended to simplify the process of making web pages presentable. CSS allows you to apply styles to web pages. More importantly, CSS enables you to do this independently of the HTML that makes up each web page. It describes how a webpage should look: it prescribes colours, fonts, spacing, and much more.</p>
+                  <p>While HTML uses tags, CSS uses rulesets. CSS is easy to learn and understand, but it provides powerful control over the presentation of an HTML document.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-3" aria-expanded="false" aria-controls="chapter-1">
+                  Chapter 3 - The Power of JavaScript
+                </button>
+              </h2>
+              <div id="chapter-3" class="accordion-collapse collapse" aria-labelledby="heading-3" data-bs-parent="#chapters">
+                <div class="accordion-body">
+                  <p>JavaScript (JS) is a cross-platform, object-oriented programming language used by developers to make web pages interactive. It allows developers to create dynamically updating content, use animations, pop-up menus, clickable buttons, control multimedia, etc.</p>
+                  <p>One of the primary reasons why JavaScript has become so crucial in web development is its ability to enhance user experience. With JavaScript, developers can create interactive and dynamic elements on web pages, enabling smooth transitions, animations, and real-time updates.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-4" aria-expanded="false" aria-controls="chapter-4">
+                  Chapter 4 - Storing Data (Firebase Databases)
+                </button>
+              </h2>
+              <div id="chapter-4" class="accordion-collapse collapse" aria-labelledby="heading-4" data-bs-parent="#chapters">
+                <div class="accordion-body">
+                  <p>Firebase Realtime Database is a NoSQL cloud database that is used to store and sync the data. The data from the database can be synced at a time across all the clients such as android, web as well as IOS. The data in the database is stored in the JSON format and it updates in real-time with every connected client.</p>
+                  <p> The main advantage of using the Firebase Realtime database is that the data is updated in a real-time manner and you don't have to make any requests for the data updates or changes. The database uses data synchronization every time when data changes and these changes will reflect the connected user within milliseconds.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-5" aria-expanded="false" aria-controls="chapter-5">
+                  Chapter 5 - User Authentication
+                </button>
+              </h2>
+              <div id="chapter-5" class="accordion-collapse collapse" aria-labelledby="heading-5" data-bs-parent="#chapters">
+                <div class="accordion-body">
+                  <p> HTML Form-based Authentication enables users to supply their user name and password details in an HTML form, and submit them to login to a system. Using HTML form-based authentication, normal HTTP authentication features such as HTTP Basic or HTTP Digest are not used.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- reviews list -->
+  <section id="reviews" class="bg-light mt-5">
+  <div class="container-lg">
+    <div class="text-center">
+    <h2><i class="bi bi-stars"></i>Book Reviews</h2>
+    <p class="lead">what my students have said about the book</p>
+   </div>
+
+   <div class="row justify-content-center my-5">
+    <div class="col-lg-8">
+      <div class="list-group">
+        <div class="list-group-item py-3">
+          <div class="pb-2">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+          </div>
+          <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+          <p class="mb-1">The edition on HTML, CSS, and JavaScript is a must-buy for every aspiring web developer. It provides comprehensive guidance, advanced techniques, and valuable industry insights. Don't miss out on this essential resource!</p>
+          <small class="text-info">Review by Mario</small>
+        </div>
+        <div class="list-group-item py-3">
+          <div class="pb-2">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+          <p class="mb-1">The E-book is a valuable resource for beginners and intermediate learners. It covers the basics and provides clear explanations. The only drawback is the lack of advanced topics.</p>
+          <small class="text-info">Review by kendi</small>
+        </div>
+        <div class="list-group-item py-3">
+          <div class="pb-2">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+          </div>
+          <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+          <p class="mb-1">The HTML, CSS, and JavaScript E-book lacks in-depth explanations and doesn't cover advanced topics adequately. It is suitable for beginners but falls short for those seeking a more comprehensive understanding.</p>
+          <small class="text-success">Review by Jenner</small>
+        </div>
+        <div class="list-group-item py-3">
+          <div class="pb-2">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+          </div>
+          <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+          <p class="mb-1">The E-book is a good introduction for beginners. It covers the basics well, but could provide more examples and hands-on exercises for a better learning experience.</p>
+          <small class="text-success">Review by Kendal</small>
+        </div>
+        <div class="list-group-item py-3">
+          <div class="pb-2">
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+          <p class="mb-1">The HTML, CSS, and JavaScript E-book is extremely disappointing. It lacks clear explanations, examples, and practical exercises. It is not recommended for anyone serious about learning these programming languages.</p>
+          <small class="text-info">Review by Justin</small>
+        </div>
+      </div>
+    </div>
+   </div>
+  </div>
+  </section>
+
+  <!-- forms -->
+  <section id="contact" class="mt-5">
+    <div class="conatainer-lg">
+      <div class="text-center">
+        <h2>Get In Touch</h2>
+        <p class="lead">Questions to ask? fill out the contact form to get to me directly...</p>
+      </div>
+
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-6">
+        <form>
+          <label for="email" class="form-label">Email address:</label>
+          <div class="mb-4 input-group">
+            <span class="input-group-text">
+              <i class="bi bi-envelope-fill"></i>
+            </span>
+            <input type="email" class="form-control" id="email" placeholder="e.g.mario@example.com">
+          </div>
+          <label for="name" class="form-label">Name:</label>
+          <div class="input-group mb-4 ">
+            <span class="input-group-text">
+              <i class="bi bi-person-fill"></i>
+            </span>
+            <input type="text" class="form-control" id="name" placeholder="e.g. Trevor">
+          </div>
+
+
+          <label for="subject" class="form-label">what is your question about?</label>
+          <div class="input-group mb-4">
+            <span class="input-group-text">
+              <i class="bi bi-chat-right-dots-fill"></i>
+            </span>
+            <select class="form-select" id="subject">
+              <option value="pricing" selected>pricing query</option>
+              <option value="pricing">content query</option>
+              <option value="pricing">other query</option>
+            </select>
+          </div>
+          <div class="form-floating mb-4 mt-5">
+          <textarea class="form-control" style="height: 140px" id="query">
+          </textarea>
+          <label for="query" claa="form-label">Your query</label>
+        </div>
+
+        <div class="mb-4 text-center">
+          <button type="submit" class="btn btn-secondary">submit</button>
+        </div>
+        </form>
+      </div>
+      </div>
+    </div>
+  </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
